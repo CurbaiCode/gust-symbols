@@ -459,7 +459,7 @@ code {
 	width: 24px;
 	height: 24px;
 	/* From gustsymbols.css */
-	font-family: var(--gs-style-family, "Gust");
+	font-family: var(--gs-style-family, "Gust Symbols");
 	font-weight: var(--gs-style, normal);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;

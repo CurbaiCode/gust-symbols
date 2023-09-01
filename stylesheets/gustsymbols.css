@@ -3,7 +3,7 @@
  *  Copyright 2023 Curbai
  */
 @font-face {
-	font-family: "Gust";
+	font-family: "Gust Symbols";
 	src: url("../fonts/GustSymbols-Regular.woff2") format("woff2"),
 	url("../fonts/GustSymbols-Regular.woff") format("woff");
 	font-weight: normal;
@@ -11,7 +11,7 @@
 }
 .gs,
 .gs[data-icon]::before {
-	font-family: var(--gs-style-family, "Gust");
+	font-family: var(--gs-style-family, "Gust Symbols");
 	font-weight: var(--gs-style, normal);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
