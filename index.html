@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<title>Gust Symbols</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#6f2da8">
+		<meta name="robots" content="noindex, nofollow">
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/stylesheets/main.css">
+	</head>
+
+	<body onload="load()">
+
+		<nav class="w3-bar w3-text-white">
+			<div class="w3-bar-item"><strong class="w3-large">Gust</strong> By <a href="https://curbaicode.github.io/">Curbai</a></div>
+			<div class="w3-right">
+				<a href="https://github.com/curbaicode/gust/" class="w3-bar-item w3-button" title="Gust on GitHub"><i class="gs">github-logo</i></a>
+				<a href="#" class="w3-bar-item w3-button">Get Started</a>
+			</div>
+		</nav>
+
+		<header class="w3-container w3-center">
+			<i id="hero" class="gs" data-icon="gust-logo"></i>
+			<h1>Gust Symbols</h1>
+			<p class="w3-large"><span id="count">S</span>ymbols that will blow you away.</p>
+			<div id="search" class="w3-round-xxlarge">
+				<label><i class="gs" data-icon="magnifyingglass" title="Search"></i><input id="search-input" type="text" oninput="search()" placeholder="Search symbols..." /></label><i id="clear" class="gs" data-icon="xmark" title="Clear search" onclick="clearSearch()" style="display:none"></i>
+			</div>
+		</header>
+
+		<main id="main">
+			<aside id="sidebar" class="w3-sidebar w3-bar-block w3-padding-large">
+				<div class="controls">
+					<p id="sidebar-label" class="w3-xlarge"><i class="gs">gust-logo</i> Gust</p>
+					<label class="switch" title="Toggle Dark Mode">
+						<input class="darkmode" type="checkbox" onclick="toggle(this)" />
+						<span></span><p>Dark Mode</p>
+					</label>
+					<label class="switch" title="Toggle Symbol Fill">
+						<input class="fill" type="checkbox" onclick="toggle(this)" />
+						<span></span><p>Fill</p>
+					</label>
+					<label class="switch" title="Toggle Symbol Size">
+						<input id="small" type="checkbox" onclick="toggle(this)" />
+						<span></span><p>Small</p>
+					</label>
+				</div>
+				<ul id="categories" class="w3-ul w3-border w3-round-xlarge">
+					<li class="w3-bar-item"><button class="w3-button w3-hover-light-gray w3-left-align w3-round-large active" onclick="filter(this, 'all')"><i class="gs" data-icon="grid-square-2x2"></i> All</button></li>
+					<!--li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'devices')"><img class="w3-image" src="/assets/devices/desktop.svg" /> Devices</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'document')"><img class="w3-image" src="/assets/document/doc.svg" /> Document</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'human')"><img class="w3-image" src="/assets/human/person.svg" /> Human</button></li-->
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'logos')"><i class="gs" data-icon="curbai-logo"></i> Logos</button></li>
+					<!--li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'media')"><img class="w3-image" src="/assets/media/play.svg" /> Media</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'nature')"><img class="w3-image" src="/assets/nature/umbrella.svg" /> Nature</button></li-->
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'shapes')"><i class="gs" data-icon="square-on-circle"></i> Shapes</button></li>
+					<!--li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'smileys')"><img class="w3-image" src="/assets/smileys/face-grinning.svg" /> Smileys</button></li-->
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'system')"><i class="gs" data-icon="info-circle"/></i> System</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'tools')"><i class="gs" data-icon="magnifyingglass"/></i> Tools</button></li>
+				</ul>
+			</aside>
+			<section id="list" class="w3-container">
+				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="circle-fill">circle</i></button>
+				<button class="logos" onclick="present(this)" title="This symbol may not be modified and may only be used to refer to Curbai."><i class="gs">curbai-logo</i></button>
+				<button class="logos" onclick="present(this)" title="This symbol may not be modified and may only be used to refer to GitHub."><i class="gs">github-logo</i></button>
+				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="grid-square-2x2-fill">grid-square-2x2</i></button>
+				<button class="logos" onclick="present(this)" title="This symbol may not be modified and may only be used to refer to Gust Symbols."><i class="gs" data-alt="gust-logo-fill">gust-logo</i></button>
+				<button class="system" onclick="present(this)"><i class="gs" data-alt="info-circle-fill">info-circle</i></button>
+				<button class="tools" onclick="present(this)"><i class="gs">magnifyingglass</i></button>
+				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="rectangle-fill">rectangle</i></button>
+				<button class="shapes" onclick="present(this)"><i class="gs">rectangle-fill-on-rectangle</i></button>
+				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="rectangle-fill-on-rectangle-fill">rectangle-on-rectangle</i></button>
+				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="square-fill">square</i></button>
+				<button class="shapes" onclick="present(this)"><i class="gs">square-fill-on-circle</i></button>
+				<button class="shapes" onclick="present(this)"><i class="gs">square-fill-on-square</i></button>
+				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="square-fill-on-circle-fill">square-on-circle</i></button>
+				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="square-fill-on-square-fill">square-on-square</i></button>
+				<button class="system" onclick="present(this)"><i class="gs">xmark</i></button>
+
+
+
+				<!--div><img class="w3-image" loading="lazy" src="/assets/fleur-de-lis.svg" data-src="/assets/fleur-de-lis-fill.svg" /></div>
+
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/computer.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/desktop.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/display.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/faxmachine.svg" data-src="/assets/devices/faxmachine-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/keyboard.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/laptop.svg" /></div>
+				<div title="This symbol may not be modified and may only be used to refer to Apple's Mac Mini."><img class="w3-image" loading="lazy" src="/assets/devices/macmini.svg" data-src="/assets/devices/macmini-fill.svg" /></div>
+				<div title="This symbol may not be modified and may only be used to refer to Apple's Mac Studio."><img class="w3-image" loading="lazy" src="/assets/devices/macstudio.svg" data-src="/assets/devices/macstudio-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/pc.svg" data-src="/assets/devices/pc-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/printer.svg" data-src="/assets/devices/printer-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/printer-dotmatrix.svg" data-src="/assets/devices/printer-dotmatrix-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/tv.svg" data-src="/assets/devices/tv-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/tv-2.svg" data-src="/assets/devices/tv-2-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/watch.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/devices/watch-2.svg" /></div>
+
+				<div><img class="w3-image" loading="lazy" src="/assets/document/doc-text.svg" data-src="/assets/document/doc-text-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/document/doc.svg" data-src="/assets/document/doc-fill.svg" /></div>
+
+				<div><img class="w3-image" loading="lazy" src="/assets/human/person-technologist-2.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/human/person-technologist-fill-2.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/human/person-technologist.svg" data-src="/assets/human/person-technologist-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/human/person.svg" data-src="/assets/human/person-fill.svg" /></div>
+
+				<div><img class="w3-image" loading="lazy" src="/assets/media/pause.svg" data-src="/assets/media/pause-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/media/play.svg" data-src="/assets/media/play-fill.svg" /></div>
+
+				<div><img class="w3-image" loading="lazy" src="/assets/nature/umbrella.svg" data-src="/assets/nature/umbrella-fill.svg" /></div>
+
+				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-grinning.svg" data-src="/assets/smileys/face-grinning-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-grinning-big-eyes.svg" data-src="/assets/smileys/face-grinning-big-eyes-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-laughing.svg" data-src="/assets/smileys/face-laughing-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-no-mouth.svg" data-src="/assets/smileys/face-no-mouth-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-open-mouth.svg" data-src="/assets/smileys/face-open-mouth-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-smiling.svg" data-src="/assets/smileys/face-smiling-fill.svg" /></div>
+				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-upside-down.svg" data-src="/assets/smileys/face-upside-down-fill.svg" /></div-->
+			</section>
+		</main>
+		<aside id="modal" class="w3-modal">
+			<div class="w3-modal-content w3-round-xlarge">
+				<div class="w3-container w3-row-padding">
+					<div id="title" class="w3-col m12 l6">
+						<h2><span id="title-text" title="Copy Symbol Name" onclick="copy(this)"></span> <i class="gs" data-icon="square-on-square" title="Copy Symbol URL" onclick="copyURL()"></i></h2>
+					</div>
+					<div id="symbol" class="w3-col m12 l6">
+						<div id="display" class="w3-border w3-round-xlarge"></div>
+					</div>
+					<div id="info" class="w3-col m12 l6">
+						<div>
+							<label class="switch" title="Toggle Dark Mode">
+								<input class="darkmode" type="checkbox" onclick="toggle(this)" />
+								<span></span><p>Dark Mode</p>
+							</label>
+							<label class="switch" title="Toggle Symbol Fill">
+								<input class="fill" type="checkbox" onclick="toggle(this)" />
+								<span></span><p>Fill</p>
+							</label>
+						</div>
+						<div class="w3-row-padding w3-stretch">
+							<div class="w3-col xs12 s12 m5">
+								<input type="color" onchange="setColor(this)" title="Primary Color" />
+							</div>
+							<div class="w3-col xs12 s6 m2">
+								<a id="download" href="#" class="w3-button w3-border w3-round-large" title="Download SVG File" download><i class="gs" style="font-size:24px">square</i></a>
+							</div>
+							<div class="w3-col xs12 s6 m5">
+								<a href="#" class="w3-button filled w3-round-large" style="line-height:26px">Get Started</a>
+							</div>
+						</div>
+						<div id="notice" class="w3-border w3-round-xlarge" style="display:none">
+							<i class="gs" data-icon="info-circle-fill"></i><p><strong>Usage Restrictions:</strong> <span id="ur"></span></p>
+						</div>
+					</div>
+					<div class="w3-col l12">
+						<div class="w3-bar w3-round-large tabs">
+							<button class="w3-bar-item w3-button w3-round-large tab open" onclick="tab(this, 'ligature')">Ligature</button>
+							<button class="w3-bar-item w3-button w3-round-large tab" onclick="tab(this, 'attribute')">data-attribute</button>
+							<!--button class="w3-bar-item w3-button w3-round-large tab" onclick="tab(this, 'svg')">SVG</button-->
+						</div>
+						<pre id="ligature" class="tab-content w3-round-large" title="Copy Code Snippet" onclick="copy(this)"><code><b class="b-tag">&lt;i</b> <b class="b-attr">class</b><b class="b-op">=</b><b class="b-str">"gs"</b><b class="b-tag">&gt;</b><span class="codename"></span><b class="b-tag">&lt;/i&gt;</b></code></pre>
+						<pre id="attribute" class="tab-content w3-round-large" title="Copy Code Snippet" onclick="copy(this)" style="display:none"><code><b class="b-tag">&lt;i</b> <b class="b-attr">class</b><b class="b-op">=</b><b class="b-str">"gs"</b> <b class="b-attr">data-icon</b><b class="b-op">=</b><b class="b-str">"<span class="codename"></span>"</b><b class="b-tag">&gt;&lt;/i&gt;</b></code></pre>
+						<!--pre id="svg" class="tab-content w3-round-large" title="Copy Code Snippet" onclick="copy(this)" style="display:none"><code></code></pre-->
+					</div>
+				</div>
+				<i id="close" class="gs w3-button" title="Close" onclick="dismiss()">xmark</i>
+			</div>
+		</aside>
+
+		<script src="/scripts/uFuzzy.iife.min.js"></script>
+		<script src="/scripts/gustsymbols.js"></script>
+		<script src="/scripts/main.js"></script>
+	</body>
+
+</html>
