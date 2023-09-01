@@ -10,7 +10,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com/">
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="/stylesheets/main.css">
+		<link rel="stylesheet" href="stylesheets/main.css">
 	</head>
 
 	<body onload="load()">
@@ -51,16 +51,10 @@
 				</div>
 				<ul id="categories" class="w3-ul w3-border w3-round-xlarge">
 					<li class="w3-bar-item"><button class="w3-button w3-hover-light-gray w3-left-align w3-round-large active" onclick="filter(this, 'all')"><i class="gs" data-icon="grid-square-2x2"></i> All</button></li>
-					<!--li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'devices')"><img class="w3-image" src="/assets/devices/desktop.svg" /> Devices</button></li>
-					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'document')"><img class="w3-image" src="/assets/document/doc.svg" /> Document</button></li>
-					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'human')"><img class="w3-image" src="/assets/human/person.svg" /> Human</button></li-->
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'logos')"><i class="gs" data-icon="curbai-logo"></i> Logos</button></li>
-					<!--li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'media')"><img class="w3-image" src="/assets/media/play.svg" /> Media</button></li>
-					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'nature')"><img class="w3-image" src="/assets/nature/umbrella.svg" /> Nature</button></li-->
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'shapes')"><i class="gs" data-icon="square-on-circle"></i> Shapes</button></li>
-					<!--li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'smileys')"><img class="w3-image" src="/assets/smileys/face-grinning.svg" /> Smileys</button></li-->
-					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'system')"><i class="gs" data-icon="info-circle"/></i> System</button></li>
-					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'tools')"><i class="gs" data-icon="magnifyingglass"/></i> Tools</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'system')"><i class="gs" data-icon="info-circle"></i> System</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'tools')"><i class="gs" data-icon="magnifyingglass"></i> Tools</button></li>
 				</ul>
 			</aside>
 			<section id="list" class="w3-container">
@@ -80,47 +74,6 @@
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="square-fill-on-circle-fill">square-on-circle</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="square-fill-on-square-fill">square-on-square</i></button>
 				<button class="system" onclick="present(this)"><i class="gs">xmark</i></button>
-
-
-
-				<!--div><img class="w3-image" loading="lazy" src="/assets/fleur-de-lis.svg" data-src="/assets/fleur-de-lis-fill.svg" /></div>
-
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/computer.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/desktop.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/display.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/faxmachine.svg" data-src="/assets/devices/faxmachine-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/keyboard.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/laptop.svg" /></div>
-				<div title="This symbol may not be modified and may only be used to refer to Apple's Mac Mini."><img class="w3-image" loading="lazy" src="/assets/devices/macmini.svg" data-src="/assets/devices/macmini-fill.svg" /></div>
-				<div title="This symbol may not be modified and may only be used to refer to Apple's Mac Studio."><img class="w3-image" loading="lazy" src="/assets/devices/macstudio.svg" data-src="/assets/devices/macstudio-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/pc.svg" data-src="/assets/devices/pc-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/printer.svg" data-src="/assets/devices/printer-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/printer-dotmatrix.svg" data-src="/assets/devices/printer-dotmatrix-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/tv.svg" data-src="/assets/devices/tv-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/tv-2.svg" data-src="/assets/devices/tv-2-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/watch.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/devices/watch-2.svg" /></div>
-
-				<div><img class="w3-image" loading="lazy" src="/assets/document/doc-text.svg" data-src="/assets/document/doc-text-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/document/doc.svg" data-src="/assets/document/doc-fill.svg" /></div>
-
-				<div><img class="w3-image" loading="lazy" src="/assets/human/person-technologist-2.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/human/person-technologist-fill-2.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/human/person-technologist.svg" data-src="/assets/human/person-technologist-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/human/person.svg" data-src="/assets/human/person-fill.svg" /></div>
-
-				<div><img class="w3-image" loading="lazy" src="/assets/media/pause.svg" data-src="/assets/media/pause-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/media/play.svg" data-src="/assets/media/play-fill.svg" /></div>
-
-				<div><img class="w3-image" loading="lazy" src="/assets/nature/umbrella.svg" data-src="/assets/nature/umbrella-fill.svg" /></div>
-
-				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-grinning.svg" data-src="/assets/smileys/face-grinning-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-grinning-big-eyes.svg" data-src="/assets/smileys/face-grinning-big-eyes-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-laughing.svg" data-src="/assets/smileys/face-laughing-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-no-mouth.svg" data-src="/assets/smileys/face-no-mouth-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-open-mouth.svg" data-src="/assets/smileys/face-open-mouth-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-smiling.svg" data-src="/assets/smileys/face-smiling-fill.svg" /></div>
-				<div><img class="w3-image" loading="lazy" src="/assets/smileys/face-upside-down.svg" data-src="/assets/smileys/face-upside-down-fill.svg" /></div-->
 			</section>
 		</main>
 		<aside id="modal" class="w3-modal">
@@ -173,9 +126,9 @@
 			</div>
 		</aside>
 
-		<script src="/scripts/uFuzzy.iife.min.js"></script>
-		<script src="/scripts/gustsymbols.js"></script>
-		<script src="/scripts/main.js"></script>
+		<script src="scripts/uFuzzy.iife.min.js"></script>
+		<script src="scripts/gustsymbols.js"></script>
+		<script src="scripts/main.js"></script>
 	</body>
 
 </html>
