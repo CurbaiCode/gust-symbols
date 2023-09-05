@@ -172,6 +172,7 @@ code {
 }
 
 #sidebar.sticky {
+	height: calc(100% - 16px) !important;
 	position: fixed !important;
 	top: 16px;
 }
@@ -197,6 +198,10 @@ code {
 
 #categories {
 	overflow: auto;
+}
+
+#sidebar.sticky #categories {
+	max-height: calc(100% - 162px);
 }
 
 .w3-border {
@@ -677,6 +682,7 @@ b {
 	#sidebar.sticky {
 		top: 0;
 		padding-top: 28px !important;
+		height: auto !important;
 	}
 
 	.w3-sidebar .w3-bar-item {
