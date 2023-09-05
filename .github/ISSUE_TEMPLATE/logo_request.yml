@@ -1,0 +1,34 @@
+name: Logo Request
+description: Suggest a logo to be included in Gust Symbols
+labels: ["new logo"]
+title: "Logo Request: "
+body:
+ - type: markdown
+   attributes:
+      value: |
+         Suggest a new logo.
+ - type: textarea
+   id: description
+   attributes:
+      label: Description
+      description: Please enter a brief description of this logo and why it is important to have it in the core of Gust Symbols.
+ - type: input
+   id: official-website
+   attributes:
+      label: Official Website
+      description: Please provide the official website of the brand that uses this logo. The website must be in production and reachable from the public internet.
+   validations:
+      required: true
+ - type: input
+   attributes:
+      label: Logo Guidelines
+      description: "Link to logo guidelines, if available (e.g., https://github.com/logos/)"
+ - type: checkboxes
+   id: logo-request-checklist
+   attributes:
+      label: Logo Request Checklist
+      options:
+       - label: 'The title starts with "Logo Request: ", is followed by the brand name of the requested logo.'
+         required: true
+       - label: 'I have [searched for existing issues](https://github.com/CurbaiCode/Gust-Symbols/issues/) and to the best of my knowledge this is not a duplicate'
+         required: true

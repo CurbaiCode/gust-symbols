@@ -1,0 +1,34 @@
+name: Symbol Request
+description: Suggest a symbol to be included in Gust Symbols
+labels: ["new symbol"]
+title: "Symbol Request: "
+body:
+ - type: markdown
+   attributes:
+      value: |
+         Suggest a new symbol.
+ - type: textarea
+   id: use-case
+   attributes:
+      label: Use Case
+      description: Describe how this icon could be used.
+ - type: textarea
+   id: examples
+   attributes:
+      label: Example Image(s)
+      description: Insert example image(s) here if necessary. A good example is a single color image which displays well at small sizes (32px).
+ - type: checkboxes
+   id: symbol-request-checklist
+   attributes:
+      label: Symbol Request Checklist
+      options:
+       - label: 'The title starts with "Symbol Request: " and is followed by the requested symbol name'
+         required: true
+       - label: 'This symbol is not a logo'
+         required: true
+       - label: 'This is a single icon or matched pair (e.g., `lock` / `unlock`)'
+         required: true
+       - label: The request is for a concrete object, or I've included an example image(s)
+         required: true
+       - label: 'I have [searched for existing issues](https://github.com/CurbaiCode/Gust-Symbols/issues/) and to the best of my knowledge this is not a duplicate'
+         required: true
