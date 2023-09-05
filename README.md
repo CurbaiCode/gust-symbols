@@ -13,7 +13,7 @@ Gust Symbols is free and open-source. Feel free to use it for commercial project
  * Code — GNU AGPLv3 License
    - The GNU AGPLv3 license applies to all non-font and non-symbol files.
 
-Attribution is required by GNU AGPLv3, SIL OFL, and CC BY SA licenses. Downloaded Gust Symbols files already contain embedded comments with sufficient attribution, so you shouldn't need to do anything additional when using these files normally.
+Attribution is required by GNU AGPLv3, SIL OFL, and CC BY SA licenses. Downloaded Gust Symbols files, with the exception of .svg files, already contain embedded comments with sufficient attribution, so you shouldn't need to do anything additional when using these files normally.
 
 The attribution comments are unobtrusive, so we ask that you do not actively work to remove them from files, especially code.
 
