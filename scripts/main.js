@@ -164,7 +164,7 @@ function present(btn) {
     var name = btn.getElementsByTagName("p")[0].textContent;
     document.getElementById("title-text").textContent = name;
     document.getElementById("display").innerHTML = btn.getElementsByTagName("i")[0].outerHTML;
-    document.getElementById("download").href = `/Gust-Symbols/${(btn.classList) ? btn.classList : ""}/${name}.svg`;
+    document.getElementById("download").href = `${(btn.classList) ? btn.classList : ""}/${name}.svg`;
     var notice = document.getElementById("notice");
     if (btn.title) {
         document.getElementById("ur").textContent = btn.title;
@@ -179,14 +179,14 @@ function present(btn) {
     modal.style.display = "block";
     var newTitle = `${name} | Gust Symbols`;
     document.title = newTitle;
-    window.history.pushState(name, newTitle, `/Gust-Symbols/${name}/`);
+    window.history.pushState(name, newTitle, `${name}/`);
     Gust();
 }
 
 function dismiss() {
     modal.style.display = "none";
     document.title = "Gust Symbols";
-    window.history.pushState("Home", "Gust Symbols", "/Gust-Symbols/");
+    window.history.pushState("Home", "Gust Symbols", "");
 }
 
 window.onclick = function(event) {

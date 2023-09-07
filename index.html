@@ -53,6 +53,7 @@
 				</div>
 				<ul id="categories" class="w3-ul w3-border w3-round-xlarge">
 					<li class="w3-bar-item"><button class="w3-button w3-hover-light-gray w3-left-align w3-round-large active" onclick="filter(this, 'all')"><i class="gs" data-icon="grid-square-2x2"></i> All</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'arrows')"><i class="gs" data-icon="arrow-right"></i> Arrows</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'devices')"><i class="gs" data-icon="desktop"></i> Devices</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'logos')"><i class="gs" data-icon="curbai-logo"></i> Logos</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'shapes')"><i class="gs" data-icon="square-on-circle"></i> Shapes</button></li>
@@ -61,6 +62,14 @@
 				</ul>
 			</aside>
 			<section id="list" class="w3-container">
+				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-down-circle-fill">arrow-down-circle</i></button>
+				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-down-fill">arrow-down</i></button>
+				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-left-circle-fill">arrow-left-circle</i></button>
+				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-left-fill">arrow-left</i></button>
+				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-right-circle-fill">arrow-right-circle</i></button>
+				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-right-fill">arrow-right</i></button>
+				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-up-circle-fill">arrow-up-circle</i></button>
+				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-up-fill">arrow-up</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="circle-fill">circle</i></button>
 				<button class="devices" onclick="present(this)"><i class="gs">computer</i></button>
 				<button class="logos" onclick="present(this)" title="This symbol may not be modified and may only be used to refer to Curbai."><i class="gs">curbai-logo</i></button>
@@ -113,7 +122,7 @@
 								<input type="color" onchange="setColor(this)" title="Primary Color" />
 							</div>
 							<div class="w3-col xs12 s6 m2">
-								<a id="download" href="#" class="w3-button w3-border w3-round-large" title="Download SVG File" download><i class="gs" style="font-size:24px">square</i></a>
+								<a id="download" href="#" class="w3-button w3-border w3-round-large" title="Download SVG File" download><i class="gs" style="font-size:24px">arrow-down-circle</i></a>
 							</div>
 							<div class="w3-col xs12 s6 m5">
 								<a href="https://github.com/CurbaiCode/Gust-Symbols/wiki/Get-Started/" class="w3-button filled w3-round-large" style="line-height:26px">Get Started</a>
