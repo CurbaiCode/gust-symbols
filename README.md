@@ -2,6 +2,10 @@
 
 Symbols that will blow you away
 
+## Usage
+
+Visit the [Wiki](https://github.com/CurbaiCode/Gust-Symbols/wiki/) for information on using Gust Symbols in your next project.
+
 ## License
 
 Gust Symbols is free and open-source. Feel free to use it for commercial projects, open-source projects, etc.
