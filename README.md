@@ -1,10 +1,20 @@
 # Gust Symbols
 
-Symbols that will blow you away
+> Symbols that will blow you away
 
 ## Usage
 
 Visit the [Wiki](https://github.com/CurbaiCode/Gust-Symbols/wiki/) for information on using Gust Symbols in your next project.
+
+## Contributing
+
+### Feedback, Ideas, and Bug Reports
+
+If you found a bug, have feedback about Gust Symbols, or an idea on how to improve it, please open a new issue in this repo using the appropriate [issue template](https://github.com/CurbaiCode/Gust-Symbols/issues/new/choose/).
+
+### Requesting Symbols
+
+To request a new symbol to be included in Gust Symbols, please [search](https://github.com/CurbaiCode/Gust-Symbols/issues/) to see if your symbol request already exists. If a request is found, please add a 👍 reaction to that one. If not, open an issue using the appropriate [request template](https://github.com/CurbaiCode/Gust-Symbols/issues/new/choose/).
 
 ## License
 
