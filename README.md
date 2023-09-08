@@ -1,4 +1,4 @@
-# Gust Symbols
+<h1><img src="https://raw.githubusercontent.com/CurbaiCode/Gust-Symbols/main/docs/images/banner.png" alt="Gust Symbols" width="50%"></h1>
 
 > Symbols that will blow you away
 
