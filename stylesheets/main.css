@@ -620,6 +620,16 @@ code {
 	transform: translateY(-50%);
 }
 
+#notice #reveal.inactive:hover {
+	color: var(--secondary);
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#notice #disclaimer.inactive {
+	display: none;
+}
+
 #notice p {
 	line-height: 24px;
 	margin: 0;

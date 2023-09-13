@@ -167,7 +167,7 @@ function present(btn) {
     document.getElementById("download").href = `/Gust-Symbols/${(btn.classList) ? btn.classList : ""}/${name}.svg`;
     var notice = document.getElementById("notice");
     if (btn.title) {
-        document.getElementById("ur").textContent = btn.title;
+        document.getElementById("d-title").textContent = btn.title;
         notice.style.display = "block";
     } else {
         notice.style.display = "none";
@@ -185,6 +185,8 @@ function present(btn) {
 
 function dismiss() {
     modal.style.display = "none";
+    document.getElementById("disclaimer").classList.add("inactive");
+    document.getElementById("reveal").classList.add("inactive");
     document.title = "Gust Symbols";
     window.history.pushState("Home", "Gust Symbols", "/Gust-Symbols/");
 }
@@ -193,6 +195,11 @@ window.onclick = function(event) {
     if (event.target == modal) {
         dismiss();
     }
+}
+
+function disclaimer() {
+    document.getElementById("disclaimer").classList.remove("inactive");
+    document.getElementById("reveal").classList.remove("inactive");
 }
 
 function copyMain(txt) {
