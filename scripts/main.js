@@ -27,13 +27,14 @@ window.onscroll = function() {
     }
 };
 
-function getSymbolName() {
-    var name = location.pathname.slice(1);
-    if (name) {
-        if (name.endsWith("/")) {
-            name = name.slice(0, -1);
+function getQueryVariable(variable) {
+    var query = location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
         }
-        return name;
     }
 }
 
@@ -51,7 +52,7 @@ function load() {
             el.getElementsByTagName("p")[0].textContent = name;
         }
     }
-    var selected = getSymbolName();
+    var selected = getQueryVariable("s");
     if (selected) {
         var btn;
         for (i = 0; i < items.length; i++) {
@@ -178,7 +179,7 @@ function present(btn) {
     modal.style.display = "block";
     var newTitle = `${name} | Gust Symbols`;
     document.title = newTitle;
-    window.history.pushState(name, newTitle, `/Gust-Symbols/${name}/`);
+    window.history.pushState(name, newTitle, `/Gust-Symbols/?s=${name}`);
     Gust();
 }
 
