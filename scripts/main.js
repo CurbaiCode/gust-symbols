@@ -137,12 +137,11 @@ function filter(btn, type) {
 }
 
 function tab(el, tabName) {
-    var i, x, tabs, open;
+    var i, x, open;
     x = document.getElementsByClassName("tab-content");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    tabs = document.getElementsByClassName("tab");
     open = document.getElementsByClassName("open");
     for (i = 0; i < open.length; i++) {
         open[i].classList.remove("open");
