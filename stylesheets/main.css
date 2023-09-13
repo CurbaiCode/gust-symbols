@@ -709,7 +709,7 @@ b {
     }
 
     #categories {
-        max-height: 110px;
+        max-height: 110px !important;
     }
 
     #list {
