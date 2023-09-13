@@ -64,6 +64,7 @@ function load() {
         if (btn) {
             present(btn);
         }
+        console.log(btn);
     }
     list = [].slice.call(items).map(function(el) { return { text: el.getElementsByTagName("p")[0].textContent, element: el } });
 }
@@ -74,8 +75,6 @@ function fill(s) {
         s.textContent = s.dataset.alt;
         s.dataset.alt = os;
     }
-    load();
-    search();
 }
 
 function toggle(s) {
@@ -98,14 +97,18 @@ function toggle(s) {
         for (i = 0; i < items.length; i++) {
             fill(items[i].getElementsByTagName("i")[0]);
         }
-        fill(document.getElementById("display").getElementsByTagName("i")[0]);
-        var name = document.getElementById("display").getElementsByTagName("i")[0].textContent;
-        document.getElementById("title-text").textContent = name;
-        document.getElementById("download").href = document.getElementById("download").href.replace(/([^\/]+)(?=\.\w+$)/, name);
+        try {
+            fill(document.getElementById("display").getElementsByTagName("i")[0]);
+            var name = document.getElementById("display").getElementsByTagName("i")[0].textContent;
+            document.getElementById("title-text").textContent = name;
+            document.getElementById("download").href = document.getElementById("download").href.replace(/([^\/]+)(?=\.\w+$)/, name);
+        } catch { }
         var codes = document.getElementsByClassName("codename");
         for (var i = 0; i < codes.length; i++) {
             codes[i].textContent = name;
         }
+        load();
+        search();
     } else if (s.id == "small") {
         var list = document.getElementById("list");
         if (s.checked) {
