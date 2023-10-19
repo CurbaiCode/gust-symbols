@@ -56,9 +56,10 @@
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'arrows')"><i class="gs" data-icon="arrow-right-circle"></i> Arrows</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'coding')"><i class="gs" data-icon="code"></i> Coding</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'devices')"><i class="gs" data-icon="desktop"></i> Devices</button></li>
-					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'keyboard')"><i class="gs" data-icon="keyboard"></i> Keyboard</button></li>
-					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'miscellaneous')"><i class="gs" data-icon="command"></i> Miscellaneous</button></li>
-					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'logos')"><i class="gs" data-icon="curbai-logo"></i> Logos</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'editing')"><i class="gs" data-icon="sliders"></i> Editing</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'keyboard')"><i class="gs" data-icon="command"></i> Keyboard</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'miscellaneous')"><i class="gs" data-icon="curbai-logo"></i> Miscellaneous</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'logos')"><i class="gs" data-icon="gust-logo"></i> Logos</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'shapes')"><i class="gs" data-icon="square-on-circle"></i> Shapes</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'system')"><i class="gs" data-icon="info-circle"></i> System</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'tools')"><i class="gs" data-icon="magnifyingglass"></i> Tools</button></li>
@@ -75,7 +76,12 @@
 				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-right-circle-fill">arrow-right-circle</i></button>
 				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-up-fill">arrow-up</i></button>
 				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="arrow-up-circle-fill">arrow-up-circle</i></button>
+
+				<button class="tools" onclick="present(this)"><i class="gs" data-alt="book-fill">book</i></button>
+				<button class="tools" onclick="present(this)"><i class="gs" data-alt="book-copy-fill">book-copy</i></button>
+				<button class="tools" onclick="present(this)"><i class="gs" data-alt="book-mark-fill">book-mark</i></button>
 				<button class="coding" onclick="present(this)"><i class="gs">branch</i></button>
+
 				<button class="arrows" onclick="present(this)"><i class="gs">chevron-down</i></button>
 				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="chevron-down-circle-fill">chevron-down-circle</i></button>
 				<button class="arrows" onclick="present(this)"><i class="gs">chevron-left</i></button>
@@ -84,6 +90,8 @@
 				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="chevron-right-circle-fill">chevron-right-circle</i></button>
 				<button class="arrows" onclick="present(this)"><i class="gs">chevron-up</i></button>
 				<button class="arrows" onclick="present(this)"><i class="gs" data-alt="chevron-up-circle-fill">chevron-up-circle</i></button>
+				<button class="arrows" onclick="present(this)"><i class="gs">chevrons-horizontal</i></button>
+				<button class="arrows" onclick="present(this)"><i class="gs">chevrons-vertical</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="circle-fill">circle</i></button>
 				<button class="coding" onclick="present(this)"><i class="gs">code</i></button>
 				<button class="keyboard" onclick="present(this)"><i class="gs">command</i></button>
@@ -91,37 +99,56 @@
 				<button class="coding" onclick="present(this)"><i class="gs">compare</i></button>
 				<button class="devices" onclick="present(this)"><i class="gs">computer</i></button>
 				<button class="logos" onclick="present(this)" title="Refer to Curbai for rules about the appropriate use of their trademarks."><i class="gs">curbai-logo</i></button>
+
 				<button class="devices" onclick="present(this)"><i class="gs">desktop</i></button>
 				<button class="devices" onclick="present(this)"><i class="gs">display</i></button>
+
 				<button class="miscellaneous" onclick="present(this)"><i class="gs" data-alt="fleur-de-lis-fill">fleur-de-lis</i></button>
 				<button class="coding" onclick="present(this)"><i class="gs">fork</i></button>
+
 				<button class="logos" onclick="present(this)" title="Refer to GitHub for rules about the appropriate use of their trademarks."><i class="gs">github-logo</i></button>
 				<button class="logos" onclick="present(this)" title="Refer to GitHub for rules about the appropriate use of their trademarks."><i class="gs">github-logo-square</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="grid-square-2x2-fill">grid-square-2x2</i></button>
 				<button class="logos" onclick="present(this)" title="Refer to Gust Symbols for rules about the appropriate use of their trademarks."><i class="gs" data-alt="gust-logo-fill">gust-logo</i></button>
+
 				<button class="system" onclick="present(this)"><i class="gs" data-alt="info-circle-fill">info-circle</i></button>
+
 				<button class="devices" onclick="present(this)"><i class="gs" data-alt="keyboard-fill">keyboard</i></button>
+
 				<button class="devices" onclick="present(this)"><i class="gs">laptop</i></button>
+
 				<button class="devices" onclick="present(this)" title="Refer to Apple for rules about the appropriate use of their trademarks."><i class="gs" data-alt="macmini-fill">macmini</i></button>
 				<button class="devices" onclick="present(this)" title="Refer to Apple for rules about the appropriate use of their trademarks."><i class="gs" data-alt="macstudio-fill">macstudio</i></button>
 				<button class="tools" onclick="present(this)"><i class="gs">magnifyingglass</i></button>
 				<button class="coding" onclick="present(this)"><i class="gs">merge</i></button>
 				<button class="coding" onclick="present(this)"><i class="gs">merge-queue</i></button>
+
 				<button class="keyboard" onclick="present(this)"><i class="gs">option</i></button>
+
 				<button class="devices" onclick="present(this)"><i class="gs" data-alt="pc-fill">pc</i></button>
 				<button class="coding" onclick="present(this)"><i class="gs">pull-request</i></button>
 				<button class="coding" onclick="present(this)"><i class="gs">pull-request-closed</i></button>
 				<button class="coding" onclick="present(this)"><i class="gs">pull-request-draft</i></button>
+
+				<button class="miscellaneous" onclick="present(this)"><i class="gs">qrcode</i></button>
+
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="rectangle-fill">rectangle</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs">rectangle-fill-on-rectangle</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="rectangle-fill-on-rectangle-fill">rectangle-on-rectangle</i></button>
+
+				<button class="editing" onclick="present(this)"><i class="gs">sliders</i></button>
+				<button class="editing" onclick="present(this)"><i class="gs">sliders-vertical</i></button>
 				<button class="keyboard" onclick="present(this)"><i class="gs">space</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="square-fill">square</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs">square-fill-on-circle</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs">square-fill-on-square</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="square-fill-on-circle-fill">square-on-circle</i></button>
 				<button class="shapes" onclick="present(this)"><i class="gs" data-alt="square-fill-on-square-fill">square-on-square</i></button>
+
 				<button class="devices" onclick="present(this)"><i class="gs" data-alt="tv-fill">tv</i></button>
+
+				<button class="tools" onclick="present(this)"><i class="gs" data-alt="umbrella-fill">umbrella</i></button>
+
 				<button class="system" onclick="present(this)"><i class="gs">xmark</i></button>
 			</section>
 		</main>
