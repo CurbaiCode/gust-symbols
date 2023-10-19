@@ -734,7 +734,12 @@ b {
     }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 376px) {
+    #categories .w3-bar-item {
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+        width: 100%;
+    }
     .w3-col.xs1 {
         width: 8.33333%;
     }
