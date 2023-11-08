@@ -50,6 +50,8 @@
 						<input id="small" type="checkbox" onclick="toggle(this)" />
 						<span></span><p>Small</p>
 					</label>
+					<input class="c-primary" type="color" onchange="setColor(this)" title="Primary Color" />
+					<input class="c-background" type="color" onchange="setColor(this)" title="Background Color" />
 				</div>
 				<ul id="categories" class="w3-ul w3-border w3-round-xlarge">
 					<li class="w3-bar-item"><button class="w3-button w3-hover-light-gray w3-left-align w3-round-large active" onclick="filter(this, 'all')"><i class="gs" data-icon="grid-square-2x2"></i> All</button></li>
@@ -159,6 +161,7 @@
 				<div class="w3-container w3-row-padding">
 					<div id="title" class="w3-col m12 l6">
 						<h2><span id="title-text" title="Copy Symbol Name" onclick="copy(this)"></span> <i class="gs" data-icon="square-on-square" title="Copy Symbol URL" onclick="copyURL()"></i></h2>
+						<p id="badges"><span id="category"></span></p>
 					</div>
 					<div id="symbol" class="w3-col m12 l6">
 						<div id="display" class="w3-border w3-round-xlarge"></div>
@@ -176,7 +179,8 @@
 						</div>
 						<div class="w3-row-padding w3-stretch">
 							<div class="w3-col xs12 s12 m5">
-								<input type="color" onchange="setColor(this)" title="Primary Color" />
+								<input class="c-primary" type="color" onchange="setColor(this)" title="Primary Color" />
+								<input class="c-background" type="color" onchange="setColor(this)" title="Primary Color" />
 							</div>
 							<div class="w3-col xs12 s6 m2">
 								<a id="download" href="#" class="w3-button w3-border w3-round-large" title="Download SVG File" download><i class="gs" style="font-size:24px">arrow-down-circle</i></a>

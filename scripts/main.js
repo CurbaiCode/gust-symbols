@@ -164,10 +164,24 @@ window.onpopstate = function(e) {
 
 var modal = document.getElementById("modal");
 function present(btn) {
+    var i, tmp;
     var name = btn.getElementsByTagName("p")[0].textContent;
+    var category = document.getElementById("category");
     document.getElementById("title-text").textContent = name;
     document.getElementById("display").innerHTML = btn.getElementsByTagName("i")[0].outerHTML;
-    document.getElementById("download").href = `/Gust-Symbols/${(btn.classList) ? btn.classList : ""}/${name}.svg`;
+    document.getElementById("download").href = `/Gust-Symbols/${btn.classList[0]}/${name}.svg`;
+    category.innerHTML = "";
+    tmp = document.createElement("i");
+    tmp.classList.add("gs");
+    tmp.dataset.icon = "grid-square-2x2";
+    category.appendChild(tmp);
+    if (btn.classList) {
+        for (i = 0; i < btn.classList.length; i++) {
+            tmp = document.createElement("span");
+            tmp.innerHTML = btn.classList[i];
+            category.appendChild(tmp);
+        }
+    }
     var notice = document.getElementById("notice");
     if (btn.title) {
         document.getElementById("d-title").textContent = btn.title;
@@ -176,7 +190,7 @@ function present(btn) {
         notice.style.display = "none";
     }
     var codes = document.getElementsByClassName("codename");
-    for (var i = 0; i < codes.length; i++) {
+    for (i = 0; i < codes.length; i++) {
         codes[i].textContent = name;
     }
     modal.style.display = "block";
@@ -264,5 +278,14 @@ function clearSearch() {
 }
 
 function setColor(ci) {
-    document.body.style.setProperty("--primary", ci.value);
+    var els = document.getElementsByClassName(ci.classList[0]);
+    for (var i = 0; i < els.length; i++) {
+        els[i].value = ci.value;
+    }
+    if (ci.classList[0] == "c-primary") {
+        document.body.style.setProperty("--primary", ci.value);
+    } else if (ci.classList[0] == "c-background") {
+        document.body.style.setProperty("--default", ci.value);
+        document.getElementById("display").style.setProperty("--background", ci.value);
+    }
 }
