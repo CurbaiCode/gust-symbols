@@ -166,10 +166,17 @@ var modal = document.getElementById("modal");
 function present(btn) {
     var i, tmp;
     var name = btn.getElementsByTagName("p")[0].textContent;
+    var compatibility = document.getElementById("compatibility");
     var category = document.getElementById("category");
     document.getElementById("title-text").textContent = name;
     document.getElementById("display").innerHTML = btn.getElementsByTagName("i")[0].outerHTML;
     document.getElementById("download").href = `/Gust-Symbols/${btn.classList[0]}/${name}.svg`;
+    if (btn.dataset.version) {
+        compatibility.innerHTML = "v" + btn.dataset.version + "+";
+        compatibility.style.display = "inline";
+    } else {
+        compatibility.style.display = "";
+    }
     category.innerHTML = "";
     tmp = document.createElement("i");
     tmp.classList.add("gs");

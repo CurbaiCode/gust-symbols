@@ -594,6 +594,10 @@ code {
     margin: 0 4px;
 }
 
+#compatibility {
+    display: none;
+}
+
 #title,
 #info {
     float: right;
