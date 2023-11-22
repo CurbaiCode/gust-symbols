@@ -214,10 +214,7 @@ code {
 
 #categories {
     overflow: auto;
-}
-
-#sidebar.sticky #categories {
-    max-height: calc(100% - 162px);
+    max-height: calc(100% - 204px);
 }
 
 .w3-border {
@@ -470,12 +467,13 @@ code {
     width: 74px;
 }
 
+#list>button[data-version="1.2.0"]>.gs::after,
 #list>button[title]::after {
-    content: "info-circle";
-    color: var(--cell-hover);
+	content: "gust-logo-fill";
+    color: var(--secondary);
     position: absolute;
-    right: 4px;
-    bottom: 4px;
+    top: 4px;
+    left: 4px;
     font-size: 24px;
     background-size: 24px 24px;
     width: 24px;
@@ -503,11 +501,20 @@ code {
     overflow: hidden;
 }
 
-#list.small>button[title]::after {
-    font-size: 16px;
-    background-size: 16px 16px;
-    width: 16px;
-    height: 16px;
+#list>button[title]::after {
+    content: "info-circle";
+    color: var(--cell-hover);
+    top: auto;
+    right: 4px;
+    bottom: 4px;
+    left: auto;
+}
+
+#list.small *::after {
+    font-size: 16px !important;
+    background-size: 16px 16px !important;
+    width: 16px !important;
+    height: 16px !important;
 }
 
 #list>button>p {
