@@ -467,7 +467,7 @@ code {
     width: 74px;
 }
 
-#list>button[data-version="1.2.0"]>.gs::after,
+#list>button[data-version="1.3.0"]>.gs::after,
 #list>button[title]::after {
 	content: "gust-logo-fill";
     color: var(--secondary);

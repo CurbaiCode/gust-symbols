@@ -57,12 +57,15 @@
 					<li class="w3-bar-item"><button class="w3-button w3-hover-light-gray w3-left-align w3-round-large active" onclick="filter(this, 'all')"><i class="gs" data-icon="grid-square-2x2"></i> All</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'arrows')"><i class="gs" data-icon="arrow-right-circle"></i> Arrows</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'coding')"><i class="gs" data-icon="code"></i> Coding</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'connectivity')"><i class="gs" data-icon="wifi"></i> Connectivity</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'devices')"><i class="gs" data-icon="desktop"></i> Devices</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'editing')"><i class="gs" data-icon="sliders"></i> Editing</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'gaming')"><i class="gs" data-icon="joystick"></i> Gaming</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'keyboard')"><i class="gs" data-icon="command"></i> Keyboard</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'miscellaneous')"><i class="gs" data-icon="curbai-logo"></i> Miscellaneous</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'logos')"><i class="gs" data-icon="gust-logo"></i> Logos</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'shapes')"><i class="gs" data-icon="square-on-circle"></i> Shapes</button></li>
+					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'smileys')"><i class="gs" data-icon="face-smiling"></i> Smileys</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'system')"><i class="gs" data-icon="info-circle"></i> System</button></li>
 					<li class="w3-bar-item"><button class="w3-button w3-left-align w3-round-large" onclick="filter(this, 'tools')"><i class="gs" data-icon="magnifyingglass"></i> Tools</button></li>
 				</ul>
@@ -70,6 +73,7 @@
 			<section id="list" class="w3-container">
 				<button class="keyboard" onclick="present(this)" data-version="1.1.0"><i class="gs">alt</i></button>
 				<button class="shapes" onclick="present(this)" data-version="1.1.0"><i class="gs" data-alt="app-fill">app</i></button>
+				<button class="shapes" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="app-badge-fill">app-badge</i></button>
 				<button class="arrows" onclick="present(this)" data-version="1.0.0"><i class="gs" data-alt="arrow-down-fill">arrow-down</i></button>
 				<button class="arrows" onclick="present(this)" data-version="1.0.0"><i class="gs" data-alt="arrow-down-circle-fill">arrow-down-circle</i></button>
 				<button class="arrows" onclick="present(this)" data-version="1.0.0"><i class="gs" data-alt="arrow-left-fill">arrow-left</i></button>
@@ -79,11 +83,15 @@
 				<button class="arrows" onclick="present(this)" data-version="1.0.0"><i class="gs" data-alt="arrow-up-fill">arrow-up</i></button>
 				<button class="arrows" onclick="present(this)" data-version="1.0.0"><i class="gs" data-alt="arrow-up-circle-fill">arrow-up-circle</i></button>
 
+				<button class="gaming" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="block-fill">block</i></button>
+				<button class="gaming" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="block-question-fill">block-question</i></button>
+				<button class="connectivity" onclick="present(this)" data-version="1.3.0" title="Refer to Bluetooth SIG for rules about the appropriate use of their trademarks."><i class="gs">bluetooth</i></button>
 				<button class="tools" onclick="present(this)" data-version="1.2.0"><i class="gs" data-alt="book-fill">book</i></button>
 				<button class="tools" onclick="present(this)" data-version="1.2.0"><i class="gs" data-alt="book-copy-fill">book-copy</i></button>
 				<button class="tools" onclick="present(this)" data-version="1.2.0"><i class="gs" data-alt="book-mark-fill">book-mark</i></button>
 				<button class="coding" onclick="present(this)" data-version="1.1.0"><i class="gs">branch</i></button>
 
+				<button class="connectivity" onclick="present(this)" data-version="1.3.0"><i class="gs">cellular</i></button>
 				<button class="arrows" onclick="present(this)" data-version="1.1.0"><i class="gs">chevron-down</i></button>
 				<button class="arrows" onclick="present(this)" data-version="1.1.0"><i class="gs" data-alt="chevron-down-circle-fill">chevron-down-circle</i></button>
 				<button class="arrows" onclick="present(this)" data-version="1.1.0"><i class="gs">chevron-left</i></button>
@@ -105,17 +113,35 @@
 				<button class="devices" onclick="present(this)" data-version="0.1.0"><i class="gs">desktop</i></button>
 				<button class="devices" onclick="present(this)" data-version="0.1.0"><i class="gs">display</i></button>
 
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-diagonal-mouth-fill">face-diagonal-mouth</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-expressionless-fill">face-expressionless</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-grinning-fill">face-grinning</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-grinning-big-eyes-fill">face-grinning-big-eyes</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-joy-fill">face-joy</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-laughing-fill">face-laughing</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-neutral-fill">face-neutral</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-no-mouth-fill">face-no-mouth</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-open-mouth-fill">face-open-mouth</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-rolling-eyes-fill">face-rolling-eyes</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-smiling-fill">face-smiling</i></button>
+				<button class="smileys" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="face-upside-down-fill">face-upside-down</i></button>
+				<button class="devices" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="faxmachine-fill">faxmachine</i></button>
 				<button class="miscellaneous" onclick="present(this)" data-version="1.1.0"><i class="gs" data-alt="fleur-de-lis-fill">fleur-de-lis</i></button>
 				<button class="coding" onclick="present(this)" data-version="1.1.0"><i class="gs">fork</i></button>
 
-				<button class="logos" onclick="present(this)" data-version="1.2.0" title="Refer to Git for rules about the appropriate use of their trademarks."><i class="gs">git-logo</i></button>
-				<button class="logos" onclick="present(this)" data-version="1.2.0" title="Refer to Git for rules about the appropriate use of their trademarks."><i class="gs">git-logo-alt</i></button>
+				<button class="system" onclick="present(this)" data-version="1.3.0"><i class="gs">gear</i></button>
+				<button class="system" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="gearshape-fill">gearshape</i></button>
+				<button class="logos" onclick="present(this)" data-version="1.2.0" title="Refer to Git for rules about the appropriate use of their trademarks."><i class="gs" data-alt="git-logo-fill">git-logo</i></button>
 				<button class="logos" onclick="present(this)" data-version="0.0.1" title="Refer to GitHub for rules about the appropriate use of their trademarks."><i class="gs">github-logo</i></button>
 				<button class="logos" onclick="present(this)" data-version="1.1.0" title="Refer to GitHub for rules about the appropriate use of their trademarks."><i class="gs">github-logo-square</i></button>
 				<button class="shapes" onclick="present(this)" data-version="0.0.1"><i class="gs" data-alt="grid-square-2x2-fill">grid-square-2x2</i></button>
 				<button class="logos" onclick="present(this)" data-version="0.0.1" title="Refer to Gust Symbols for rules about the appropriate use of their trademarks."><i class="gs" data-alt="gust-logo-fill">gust-logo</i></button>
 
+				<button class="shapes" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="hexagon-fill">hexagon</i></button>
+
 				<button class="system" onclick="present(this)" data-version="0.0.1"><i class="gs" data-alt="info-circle-fill">info-circle</i></button>
+
+				<button class="gaming" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="joystick-fill">joystick</i></button>
 
 				<button class="devices coding keyboard" onclick="present(this)" data-version="0.1.0"><i class="gs" data-alt="keyboard-fill">keyboard</i></button>
 
@@ -130,6 +156,8 @@
 				<button class="keyboard" onclick="present(this)" data-version="1.1.0"><i class="gs">option</i></button>
 
 				<button class="devices" onclick="present(this)" data-version="0.1.0"><i class="gs" data-alt="pc-fill">pc</i></button>
+				<button class="devices" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="printer-fill">printer</i></button>
+				<button class="devices" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="printer-dotmatrix-fill">printer-dotmatrix</i></button>
 				<button class="coding" onclick="present(this)" data-version="1.1.0"><i class="gs">pull-request</i></button>
 				<button class="coding" onclick="present(this)" data-version="1.1.0"><i class="gs">pull-request-closed</i></button>
 				<button class="coding" onclick="present(this)" data-version="1.1.0"><i class="gs">pull-request-draft</i></button>
@@ -139,7 +167,10 @@
 				<button class="shapes" onclick="present(this)" data-version="0.0.1"><i class="gs" data-alt="rectangle-fill">rectangle</i></button>
 				<button class="shapes" onclick="present(this)" data-version="0.0.1"><i class="gs">rectangle-fill-on-rectangle</i></button>
 				<button class="shapes" onclick="present(this)" data-version="0.0.1"><i class="gs" data-alt="rectangle-fill-on-rectangle-fill">rectangle-on-rectangle</i></button>
+				<button class="connectivity" onclick="present(this)" data-version="1.3.0"><i class="gs">rss</i></button>
 
+				<button class="shapes" onclick="present(this)" data-version="1.3.0"><i class="gs" data-alt="shield-fill">shield</i></button>
+				<button class="shapes" onclick="present(this)" data-version="1.3.0"><i class="gs">shield-lefthalf</i></button>
 				<button class="editing" onclick="present(this)" data-version="1.2.0"><i class="gs">sliders</i></button>
 				<button class="editing" onclick="present(this)" data-version="1.2.0"><i class="gs">sliders-vertical</i></button>
 				<button class="keyboard" onclick="present(this)" data-version="1.1.0"><i class="gs">space</i></button>
@@ -152,6 +183,8 @@
 				<button class="devices" onclick="present(this)" data-version="0.1.0"><i class="gs" data-alt="tv-fill">tv</i></button>
 
 				<button class="tools" onclick="present(this)" data-version="1.2.0"><i class="gs" data-alt="umbrella-fill">umbrella</i></button>
+
+				<button class="connectivity" onclick="present(this)" data-version="1.3.0"><i class="gs">wifi</i></button>
 
 				<button class="system" onclick="present(this)" data-version="0.0.1"><i class="gs">xmark</i></button>
 			</section>

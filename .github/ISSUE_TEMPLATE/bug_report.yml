@@ -3,47 +3,47 @@ description: Report a bug to help us improve
 title: "Bug: "
 labels: ["bug", "needs-triage"]
 body:
- - type: markdown
-   attributes:
-      value: |
-        Report a bug to help us improve
- - type: textarea
-   id: description
-   attributes:
-      label: Bug Description
-      description: What happened? What are you seeing? How did you arrive here? Be clear and concise and feel free to include screenshots to help explain the problem.
-   validations:
-      required: true
- - type: textarea
-   id: reproduce
-   attributes:
-      label: To Reproduce
-      description: Provide steps to reproduce the behavior or provide a URL to a reproducible use case.
- - type: input
-   id: version
-   attributes:
-      label: Gust Symbols Version
-      description: Provide the version of Gust Symbols affected by this bug.
-      placeholder: v1.2.0
-   validations:
-      required: true
- - type: textarea
-   id: environment
-   attributes:
-      label: Environment
-      description: Provide information about the application, browser, and/or operating system affected by this bug.
-      placeholder: |
-        - Adobe Photshop on Windows 11
-        - Firefox 100.0 on macOS 13 Ventura
-        - GIMP on Ubuntu 22.04
-        - Safari on iOS 16
-   validations:
-      required: true
- - type: checkboxes
-   id: bug-report-checklist
-   attributes:
-      label: Bug Report Checklist
-      options:
-       - label: 'I have included a test case because my odds go _way_ up that the team can fix this when I do'
-       - label: 'I have [searched for existing issues](https://github.com/CurbaiCode/Gust-Symbols/issues/) and to the best of my knowledge this is not a duplicate'
-         required: true
+    - type: markdown
+      attributes:
+          value: |
+              Report a bug to help us improve
+    - type: textarea
+      id: description
+      attributes:
+          label: Bug Description
+          description: What happened? What are you seeing? How did you arrive here? Be clear and concise and feel free to include screenshots to help explain the problem.
+      validations:
+          required: true
+    - type: textarea
+      id: reproduce
+      attributes:
+          label: To Reproduce
+          description: Provide steps to reproduce the behavior or provide a URL to a reproducible use case.
+    - type: input
+      id: version
+      attributes:
+          label: Gust Symbols Version
+          description: Provide the version of Gust Symbols affected by this bug.
+          placeholder: v1.3.0
+      validations:
+          required: true
+    - type: textarea
+      id: environment
+      attributes:
+          label: Environment
+          description: Provide information about the application, browser, and/or operating system affected by this bug.
+          placeholder: |
+              - Adobe Photshop on Windows 11
+              - Firefox 100.0 on macOS 13 Ventura
+              - GIMP on Ubuntu 22.04
+              - Safari on iOS 16
+      validations:
+          required: true
+    - type: checkboxes
+      id: bug-report-checklist
+      attributes:
+          label: Bug Report Checklist
+          options:
+              - label: "I have included a test case because my odds go _way_ up that the team can fix this when I do"
+              - label: "I have [searched for existing issues](https://github.com/CurbaiCode/Gust-Symbols/issues/) and to the best of my knowledge this is not a duplicate"
+                required: true
