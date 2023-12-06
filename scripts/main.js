@@ -168,9 +168,17 @@ function present(btn) {
     var name = btn.getElementsByTagName("p")[0].textContent;
     var compatibility = document.getElementById("compatibility");
     var category = document.getElementById("category");
+    var download = document.getElementById("download");
+    var x = btn.classList[0];
     document.getElementById("title-text").textContent = name;
     document.getElementById("display").innerHTML = btn.getElementsByTagName("i")[0].outerHTML;
-    document.getElementById("download").href = `/Gust-Symbols/${btn.classList[0]}/${name}.svg`;
+    if (x == "logos") {
+        download.removeAttribute("download");
+        download.href = "";
+    } else {
+        download.href = `/Gust-Symbols/${x}/${name}.svg`;
+        download.setAttribute("download", "");
+    }
     if (btn.dataset.version) {
         compatibility.innerHTML = "v" + btn.dataset.version + "+";
         compatibility.style.display = "inline";

@@ -129,6 +129,12 @@ button .gs {
     cursor: pointer;
 }
 
+a[href=""] {
+	background-color: var(--background);
+	color: var(--cell-hover);
+	pointer-events: none;
+}
+
 input[type=color] {
 	border: none;
     border-top: 1px solid var(--cell);
