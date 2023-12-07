@@ -20,15 +20,19 @@ To request a new symbol to be included in Gust Symbols, please [search](https://
 
 Gust Symbols is free and open-source. Feel free to use it for commercial projects, open-source projects, etc.
 
- * Symbols[^1] — CC BY SA 4.0 License
+ * Symbols[^1] — [CC BY SA 4.0 <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"> <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/by.svg"> <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"> <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg">](http://creativecommons.org/licenses/by-nc-sa/4.0/)
    - The CC BY SA 4.0 license applies to all symbols packaged as .svg or other image file types.
- * Fonts — SIL OFL 1.1 License
+ * Fonts — [SIL OFL 1.1 ![OFL](https://scripts.sil.org/cms/sites/nrsi/media/OFL_logo_rect_color.png)](https://openfontlicense.org/open-font-license-official-text/)
    - The SIL OFL license applies to all symbols packaged as web and desktop font files.
- * Code — GNU AGPLv3 License
+ * Code — [GNU AGPLv3 ![AGPL-3.0](https://www.gnu.org/graphics/agplv3-88x31.png)](https://www.gnu.org/licenses/agpl-3.0.html)
    - The GNU AGPLv3 license applies to all non-font and non-symbol files.
 
 Attribution is required by GNU AGPLv3, SIL OFL, and CC BY SA licenses. Downloaded Gust Symbols files, with the exception of .svg files, already contain embedded comments with sufficient attribution, so you shouldn't need to do anything additional when using these files normally.
 
 The attribution comments are unobtrusive, so we ask that you do not actively work to remove them from files, especially code.
+
+### Logo Symbols
+
+All logos are trademarks of their respective owners. The use of these trademarks does not indicate endorsement of the trademark holder by Gust Symbols, nor vice versa. Refer to the company, product, or service to which the symbol refers for rules about the appropriate use of their trademarks.
 
 [^1]: The words _symbol_ and _icon_ are used interchageably.
