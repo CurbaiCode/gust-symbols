@@ -20,7 +20,7 @@ To request a new symbol to be included in Gust Symbols, please [search](https://
 
 Gust Symbols is free and open-source. Feel free to use it for commercial projects, open-source projects, etc.
 
- * Symbols[^1] — [CC BY SA 4.0 <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"> <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/by.svg"> <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"> <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg">](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+ * Symbols[^1] — [CC BY SA 4.0 <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"> <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/by.svg"> <img style="height:22px" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg">](http://creativecommons.org/licenses/by-sa/4.0/)
    - The CC BY SA 4.0 license applies to all symbols packaged as .svg or other image file types.
  * Fonts — [SIL OFL 1.1 ![OFL](https://scripts.sil.org/cms/sites/nrsi/media/OFL_logo_rect_color.png)](https://openfontlicense.org/open-font-license-official-text/)
    - The SIL OFL license applies to all symbols packaged as web and desktop font files.
