@@ -108,11 +108,13 @@ nav .w3-button:hover {
 	color: #fff !important;
 }
 
-nav .w3-button:has(.gs) {
+nav .w3-button:has(.gs),
+nav .w3-button:has(.gsl){
 	padding: 4px 10px !important;
 }
 
-nav .w3-button .gs {
+nav .w3-button .gs,
+nav .w3-button .gsl {
 	font-size: 28px;
 }
 
@@ -125,7 +127,9 @@ button {
 }
 
 a .gs,
-button .gs {
+a .gsl,
+button .gs,
+button .gsl {
 	cursor: pointer;
 }
 
@@ -213,7 +217,7 @@ code {
 	opacity: 1;
 }
 
-#sidebar-label .gs {
+#sidebar-label .gsl {
 	font-size: 32px;
 	margin-top: -2px;
 }
@@ -278,7 +282,8 @@ code {
 	color: #fff !important;
 }
 
-.w3-sidebar .w3-bar-item .w3-button .gs {
+.w3-sidebar .w3-bar-item .w3-button .gs,
+.w3-sidebar .w3-bar-item .w3-button .gsl {
 	font-size: 24px;
 }
 
@@ -473,9 +478,9 @@ code {
 	width: 74px;
 }
 
-#list>button[data-version="1.3.0"]>.gs::after,
+#list>button[data-version="2.0.0"]>.gsl::after,
 #list>button[title]::after {
-	content: "gust-logo-fill";
+	content: "gust-fill";
 	color: var(--secondary);
 	position: absolute;
 	top: 4px;
@@ -485,7 +490,7 @@ code {
 	width: 24px;
 	height: 24px;
 	/* From gustsymbols.css */
-	font-family: var(--gs-style-family, "Gust Symbols");
+	font-family: var(--gs-style-family, "Gust Symbols Logos");
 	font-weight: var(--gs-style, normal);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -510,6 +515,7 @@ code {
 #list>button[title]::after {
 	content: "info-circle";
 	color: var(--cell-hover);
+	font-family: var(--gs-style-family, "Gust Symbols");
 	top: auto;
 	right: 4px;
 	bottom: 4px;
@@ -553,12 +559,14 @@ code {
 	top: 65px;
 }
 
-#list .gs {
+#list .gs,
+#list .gsl {
 	color: var(--primary);
 	font-size: 64px;
 }
 
-#list.small .gs {
+#list.small .gs,
+#list.small .gsl {
 	font-size: 32px;
 }
 
@@ -624,7 +632,8 @@ code {
 	padding: 64px 24px;
 }
 
-#display .gs {
+#display .gs,
+#display .gsl {
 	--gs-display: block;
 	margin: 0 auto;
 }

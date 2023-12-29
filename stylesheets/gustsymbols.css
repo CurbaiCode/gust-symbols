@@ -1,5 +1,5 @@
 /*
- *  Gust Symbols 1.3.0 - https://curbaicode.github.io/Gust-Symbols/
+ *  Gust Symbols 2.0.0 - https://curbaicode.github.io/Gust-Symbols/
  *  Copyright 2023 Curbai
  */
 @font-face {
@@ -10,8 +10,18 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "Gust Symbols Logos";
+	src: url("../fonts/GustSymbols-Logos-Regular.woff2") format("woff2"),
+		url("../fonts/GustSymbols-Logos-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
 .gs,
-.gs[data-icon]::before {
+.gsl,
+.gs[data-icon]::before,
+.gsl[data-icon]::before {
 	font-family: var(--gs-style-family, "Gust Symbols");
 	font-weight: var(--gs-style, normal);
 	-moz-osx-font-smoothing: grayscale;
@@ -34,7 +44,13 @@
 	overflow: hidden;
 }
 
-.gs[data-icon]::before {
+.gsl,
+.gsl[data-icon]::before {
+	font-family: var(--gs-style-family, "Gust Symbols Logos");
+}
+
+.gs[data-icon]::before,
+.gsl[data-icon]::before {
 	content: attr(data-icon);
 	display: block;
 }

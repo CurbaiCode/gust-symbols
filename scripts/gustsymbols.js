@@ -1,9 +1,9 @@
 /*
- * Gust Symbols 1.3.0 - https://curbaicode.github.io/Gust-Symbols/
+ * Gust Symbols 2.0.0 - https://curbaicode.github.io/Gust-Symbols/
  * Copyright 2023 Curbai
  */
 function Gust() {
-	var symbols = document.getElementsByClassName("gs");
+	var symbols = document.querySelectorAll(".gs, .gsl");
 	for (var i = 0; i < symbols.length; i++) {
 		var symbol = symbols[i];
 		var cs = getComputedStyle(symbol);

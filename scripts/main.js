@@ -166,6 +166,7 @@ var modal = document.getElementById("modal");
 function present(btn) {
 	var i, tmp;
 	var name = btn.getElementsByTagName("p")[0].textContent;
+	var famname = btn.getElementsByTagName("i")[0].classList[0];
 	var compatibility = document.getElementById("compatibility");
 	var category = document.getElementById("category");
 	var download = document.getElementById("download");
@@ -207,6 +208,10 @@ function present(btn) {
 	var codes = document.getElementsByClassName("codename");
 	for (i = 0; i < codes.length; i++) {
 		codes[i].textContent = name;
+	}
+	var fam = document.getElementsByClassName("family");
+	for (i = 0; i < fam.length; i++) {
+		fam[i].textContent = famname;
 	}
 	modal.style.display = "block";
 	var newTitle = `${name} | Gust Symbols`;
