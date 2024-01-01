@@ -478,7 +478,7 @@ code {
 	width: 74px;
 }
 
-#list>button[data-version="2.0.0"]>.gsl::after,
+#list>button[data-version="2.1.0"]>.gs::after,
 #list>button[title]::after {
 	content: "gust-fill";
 	color: var(--secondary);

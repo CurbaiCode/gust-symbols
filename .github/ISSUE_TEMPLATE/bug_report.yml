@@ -24,7 +24,7 @@ body:
       attributes:
           label: Gust Symbols Version
           description: Provide the version of Gust Symbols affected by this bug.
-          placeholder: v2.0.0
+          placeholder: v2.1.0
       validations:
           required: true
     - type: textarea
