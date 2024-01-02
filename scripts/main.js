@@ -181,7 +181,7 @@ function present(btn) {
 		download.setAttribute("download", "");
 	}
 	if (btn.dataset.version) {
-		compatibility.innerHTML = "v" + btn.dataset.version + "+";
+		compatibility.innerHTML = btn.dataset.version;
 		compatibility.style.display = "inline";
 	} else {
 		compatibility.style.display = "";
