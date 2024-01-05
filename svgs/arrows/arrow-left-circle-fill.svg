@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.2" viewBox="0 0 96 96" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.2" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gust Symbols by Curbai - https://curbaicode.github.io/ License - https://curbaicode.github.io/license/ (Symbols: CC BY SA 4.0, Fonts: SIL OFL 1.1, Code: GNU AGPLv3) Copyright Curbai -->
   <path d="M 6 48 C 6 24.8 24.8 6 48 6 C 71.2 6 90 24.8 90 48 C 90 71.2 71.2 90 48 90 C 24.8 90 6 71.2 6 48 Z M 44.63 42 L 47.785 34.113 C 48.64 31.968 46.851 29.701 44.566 30.034 C 43.927 30.127 43.336 30.423 42.879 30.879 L 27.879 45.879 C 26.708 47.05 26.708 48.95 27.879 50.121 L 42.879 65.121 C 44.514 66.752 47.302 66.002 47.897 63.77 C 48.063 63.147 48.024 62.486 47.785 61.887 L 44.63 54 L 63 54 C 66.3 54 69 51.3 69 48 C 69 44.7 66.3 42 63 42 Z"/>
 </svg>
