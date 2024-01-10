@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "https://www.w3schools.com/w3css/4/w3.css";
-@import "gustsymbols.css";
+@import "gustsymbols.min.css";
 
 :root {
 	--main: #6f2da8;
