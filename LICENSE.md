@@ -22,7 +22,7 @@ image file types.
 In the Gust Symbols download, the SIL OFL license applies to all symbols/icons packaged
 as web and desktop font files.
 
-Copyright (c) 2023 Curbai (https://curbaicode.github.io/)
+Copyright (c) 2023-2024 Curbai (https://curbaicode.github.io/)
 with Reserved Font Name: "Gust Symbols";
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
@@ -122,7 +122,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 In the Gust Symbols download, the GNU AGPLv3 license applies to all non-font and
 non-icon files.
 
-Copyright 2023 Curbai
+Copyright 2023-2024 Curbai
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
