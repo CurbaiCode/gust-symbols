@@ -437,7 +437,6 @@ code {
 	flex-flow: row wrap;
 	margin-left: var(--sidebar);
 	padding-bottom: 24px;
-	min-height: calc(100vh - 59px);
 }
 
 #list>button {
@@ -929,6 +928,12 @@ footer p>* {
 
 	#sidebar.sticky+#list {
 		margin-top: 288px;
+	}
+}
+
+@media (min-width: 601px) {
+	#list {
+		min-height: calc(100vh - 59px);
 	}
 }
 
