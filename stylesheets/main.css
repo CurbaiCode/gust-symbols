@@ -433,9 +433,11 @@ code {
 
 #list {
 	display: flex;
+	align-content: flex-start;
 	flex-flow: row wrap;
 	margin-left: var(--sidebar);
 	padding-bottom: 24px;
+	min-height: calc(100vh - 59px);
 }
 
 #list>button {
