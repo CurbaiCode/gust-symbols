@@ -26,6 +26,8 @@ window.onscroll = function() {
 	}
 };
 
+document.getElementsByClassName("fill")[0].click();
+
 function mode(b) {
 	if (b) {
 		document.body.setAttribute("data-theme", b);
