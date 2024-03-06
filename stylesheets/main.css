@@ -225,7 +225,7 @@ code {
 	line-height: 32px;
 	opacity: 0;
 	overflow: hidden;
-	transition: all 0.25s;
+	transition: height 0.25s, opacity 0.25s;
 }
 
 #sidebar-label.show {
@@ -406,6 +406,7 @@ code {
 #search-input {
 	background-color: transparent;
 	border: none;
+	color: inherit;
 	line-height: 48px;
 	outline: none;
 	padding: 0;
@@ -446,7 +447,7 @@ code {
 	margin: 16px 8px;
 	padding: 24px 40px;
 	position: relative;
-	transition: all 0.15s;
+	transition: border 0.15s, margin 0.15s;
 	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -460,11 +461,7 @@ code {
 
 #list>button.hide,
 #list>button.filter {
-	border: none;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	width: 0;
+	display: none;
 }
 
 #list>button:hover {
@@ -557,7 +554,7 @@ code {
 	text-align: center;
 	width: 144px;
 	z-index: -1;
-	transition: all 0.15s;
+	transition: top 0.15s, opacity 0.15s;
 }
 
 #list.small>button>p {
