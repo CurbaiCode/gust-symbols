@@ -3,8 +3,12 @@
  * License - https://curbaicode.github.io/Gust-Symbols/license/ (Symbols: CC BY SA 4.0, Fonts: SIL OFL 1.1, Code: GNU AGPLv3)
  * Copyright 2024 Curbai
  */
-function Gust() {
-	var symbols = document.querySelectorAll(".gs, .gsl");
+function Gust(s) {
+	if (s != undefined) {
+		var symbols = [s];
+	} else {
+		var symbols = document.querySelectorAll(".gs, .gsl");
+	}
 	for (var i = 0; i < symbols.length; i++) {
 		var symbol = symbols[i];
 		var cs = getComputedStyle(symbol);
@@ -19,7 +23,7 @@ function Gust() {
 if (typeof window.webkitConvertPointFromNodeToPage === "function") { // Browser is WebKit
 	if (document.readyState === "loading") {
 		// Loading hasn't finished yet
-		document.addEventListener("DOMContentLoaded", Gust);
+		document.addEventListener("DOMContentLoaded", function () { Gust(); });
 	} else {
 		// "DOMContentLoaded" has already fired
 		Gust();

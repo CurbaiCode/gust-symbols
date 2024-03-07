@@ -271,33 +271,36 @@ var input = document.getElementById("search-input");
 function search() {
 	var i, x;
 	var clear = document.getElementById("clear");
-	if (input.value) {
-		input.style.width = "calc(100% - 96px)";
-		clear.style.display = "inline-block";
-		Gust();
-		let uf = new uFuzzy({});
-		let idxs = uf.search(list.map(function(el) { return el.text }), input.value);
-		if (idxs != null && idxs.length > 0) {
+	if (input) {
+		if (input.value) {
+			input.style.width = "calc(100% - 96px)";
+			clear.style.display = "inline-block";
+			Gust(clear);
+			let uf = new uFuzzy({ intraChars: ".", intraMode: 1 });
+			let idxs = uf.search(list.map(function(el) { return el.text }), input.value);
+			if (idxs != null && idxs.length > 0) {
+				for (i = 0; i < items.length; i++) {
+					x = items[i];
+					x.classList.add("filter");
+					x.style.order = "";
+				}
+				for (i = 0; i < idxs[0].length; i++) {
+					try {
+						x = list[idxs[0][i]].element;
+						console.log(idxs[0][i]);
+						x.classList.remove("filter");
+						x.style.order = idxs[2][i];
+					} catch { }
+				}
+			}
+		} else {
+			clear.style.display = "none";
+			input.style.width = "calc(100% - 48px)";
 			for (i = 0; i < items.length; i++) {
 				x = items[i];
-				x.classList.add("filter");
+				x.classList.remove("filter");
 				x.style.order = "";
 			}
-			for (i = 0; i < idxs.length; i++) {
-				try {
-					x = list[idxs[0][i]].element;
-					x.classList.remove("filter");
-					x.style.order = idxs[2][i];
-				} catch { }
-			}
-		}
-	} else {
-		clear.style.display = "none";
-		input.style.width = "calc(100% - 48px)";
-		for (i = 0; i < items.length; i++) {
-			x = items[i];
-			x.classList.remove("filter");
-			x.style.order = "";
 		}
 	}
 }
