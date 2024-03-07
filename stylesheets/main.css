@@ -150,7 +150,7 @@ a[href=""] {
 	pointer-events: none;
 }
 
-a:not(a[href=""]):hover {
+body>*:not(nav) a:not(a[href=""]):hover {
 	color: var(--secondary);
 	text-decoration: underline;
 }
