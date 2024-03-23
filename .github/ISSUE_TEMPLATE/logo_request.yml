@@ -30,5 +30,5 @@ body:
       options:
        - label: 'The title starts with "Logo Request: ", is followed by the brand name of the requested logo.'
          required: true
-       - label: 'I have [searched for existing issues](https://github.com/CurbaiCode/Gust-Symbols/issues/) and to the best of my knowledge this is not a duplicate'
+       - label: 'I have [searched for existing issues](https://github.com/CurbaiCode/gust-symbols/issues/) and to the best of my knowledge this is not a duplicate'
          required: true

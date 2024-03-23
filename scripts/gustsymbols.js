@@ -1,6 +1,6 @@
 /*
- * Gust Symbols 2.3.1 - https://curbaicode.github.io/Gust-Symbols/
- * License - https://curbaicode.github.io/Gust-Symbols/license/ (Symbols: CC BY SA 4.0, Fonts: SIL OFL 1.1, Code: GNU AGPLv3)
+ * Gust Symbols 2.3.1 - https://curbaicode.github.io/gust-symbols/
+ * License - https://curbaicode.github.io/gust-symbols/license/ (Symbols: CC BY SA 4.0, Fonts: SIL OFL 1.1, Code: GNU AGPLv3)
  * Copyright 2024 Curbai
  */
 function Gust(s) {

@@ -1,6 +1,6 @@
 /*
- * Gust Symbols 2.3.1 - https://curbaicode.github.io/Gust-Symbols/
- * License - https://curbaicode.github.io/Gust-Symbols/license/ (Symbols: CC BY SA 4.0, Fonts: SIL OFL 1.1, Code: GNU AGPLv3)
+ * Gust Symbols 2.3.1 - https://curbaicode.github.io/gust-symbols/
+ * License - https://curbaicode.github.io/gust-symbols/license/ (Symbols: CC BY SA 4.0, Fonts: SIL OFL 1.1, Code: GNU AGPLv3)
  * Copyright 2024 Curbai
  */
 @font-face{font-family:"Gust Symbols";src:url("../fonts/GustSymbols-Regular.woff2")format("woff2"),url("../fonts/GustSymbols-Regular.woff")format("woff");font-weight:normal;font-style:normal}@font-face{font-family:"Gust Symbols Logos";src:url("../fonts/GustSymbols-Logos-Regular.woff2")format("woff2"),url("../fonts/GustSymbols-Logos-Regular.woff")format("woff");font-weight:normal;font-style:normal}.gs,.gsl,.gs[data-icon]::before,.gsl[data-icon]::before{font-family:var(--gs-style-family,"Gust Symbols");font-weight:var(--gs-style,normal);-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--gs-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;cursor:default;speak:never;text-align:center;text-transform:none;vertical-align:middle;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;overflow:hidden}.gsl,.gsl[data-icon]::before{font-family:var(--gs-style-family,"Gust Symbols Logos")}.gs[data-icon]::before,.gsl[data-icon]::before{content:attr(data-icon);display:block}

@@ -38,5 +38,5 @@ body:
           required: true
         - label: 'This is a single feature'
           required: true
-        - label: 'I have [searched for existing issues](https://github.com/CurbaiCode/Gust-Symbols/issues/) and to the best of my knowledge this is not a duplicate'
+        - label: 'I have [searched for existing issues](https://github.com/CurbaiCode/gust-symbols/issues/) and to the best of my knowledge this is not a duplicate'
           required: true

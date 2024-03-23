@@ -187,7 +187,7 @@ function present(btn) {
 		download.removeAttribute("download");
 		download.href = "";
 	} else {
-		download.href = `/Gust-Symbols/${x}/${name}.svg`;
+		download.href = `/gust-symbols/${x}/${name}.svg`;
 		download.setAttribute("download", "");
 	}
 	if (btn.dataset.version) {
@@ -226,7 +226,7 @@ function present(btn) {
 	modal.style.display = "block";
 	var newTitle = `${name} | Gust Symbols`;
 	document.title = newTitle;
-	window.history.pushState(name, newTitle, `/Gust-Symbols/?s=${name}`);
+	window.history.pushState(name, newTitle, `/gust-symbols/?s=${name}`);
 	Gust();
 }
 
@@ -235,7 +235,7 @@ function dismiss() {
 	document.getElementById("disclaimer").classList.add("inactive");
 	document.getElementById("reveal").classList.add("inactive");
 	document.title = "Gust Symbols";
-	window.history.pushState("Home", "Gust Symbols", "/Gust-Symbols/");
+	window.history.pushState("Home", "Gust Symbols", "/gust-symbols/");
 }
 
 window.onclick = function(event) {

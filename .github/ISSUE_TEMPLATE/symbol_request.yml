@@ -30,5 +30,5 @@ body:
          required: true
        - label: The request is for a concrete object, or I've included an example image(s)
          required: true
-       - label: 'I have [searched for existing issues](https://github.com/CurbaiCode/Gust-Symbols/issues/) and to the best of my knowledge this is not a duplicate'
+       - label: 'I have [searched for existing issues](https://github.com/CurbaiCode/gust-symbols/issues/) and to the best of my knowledge this is not a duplicate'
          required: true
